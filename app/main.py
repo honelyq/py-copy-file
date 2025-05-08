@@ -11,7 +11,7 @@ def copy_file(command: str) -> None:
         if origin == rep:
             return
 
-        with open(origin, "r") as ori, open(rep, "w") as rep:
-            rep.write(ori.read())
+        with open(origin, "r") as ori, open(rep, "w") as re:
+            re.write(ori.read())
     except FileNotFoundError:
         pass
